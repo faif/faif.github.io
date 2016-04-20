@@ -1,0 +1,10 @@
+/*
+ * spa.navbar.css
+ * Navigation bar feature styles
+*/
+
+/** Begin bootstrap override */
+.navbar-brand {
+  padding-top : 0px;
+}
+/** End bootstrap override */
