@@ -11,45 +11,35 @@ spa.carousel = (function () {
   //---------------- BEGIN MODULE SCOPE VARIABLES --------------
   var
     configMap = {
+      speed_interval : 12000,
       main_html : String()
         + '<div id="myCarousel" class="carousel slide" data-ride="carousel">'
      + '<ol class="carousel-indicators">'
        + '<li data-target="#myCarousel" data-slide-to="0" class="active"></li>'
        + '<li data-target="#myCarousel" data-slide-to="1"></li>'
-       + '<li data-target="#myCarousel" data-slide-to="2"></li>'
      + '</ol>'
      + '<div class="carousel-inner" role="listbox">'
        + '<div class="item active">'
-         + '<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">'
+         + '<img class="first-slide">'
+         + '<div class="container">'
+           + '<div class="carousel-caption">'           
+             + '<h1>Hello <code>world</code> :)</h1>'
+             + '<p>I am Sakis, a Software Engineer living in The Netherlands. I like functional programming (Scala, Clojure, Swift) and high-level'
+             + ' languages (Python, Prolog, JavaScript) but if a project requires it I can also write code in more verbose languages (C++, Java)</p>'
+             + '<p><a class="btn btn-lg btn-primary" href="#about" role="button">More about me</a></p>'
+           + '</div>'
+         + '</div>'
+       + '</div>'
+       + '<div class="item">'
+         + '<img class="second-slide">'
          + '<div class="container">'
            + '<div class="carousel-caption">'
              + '<h1>Mastering Python Design Patterns</h1>'
              + '<p>Do you like Python 3? Are you interested in learning about how to implement your favorite Design Patterns using idiomatic Python? Give my book a try!</p>'
-             + '<p><a class="btn btn-lg btn-primary" href="#" role="button">I am interested</a></p>'
+             + '<p><a class="btn btn-lg btn-primary" href="https://www.packtpub.com/application-development/mastering-python-design-patterns" role="button">I am interested</a></p>'
            + '</div>'
          + '</div>'
        + '</div>'
-       + '<div class="item">'
-         + '<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">'
-         + '<div class="container">'
-           + '<div class="carousel-caption">'
-             + '<h1>Another example headline.</h1>'
-             + '<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>'
-             + '<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>'
-           + '</div>'
-         + '</div>'
-       + '</div>'
-       + '<div class="item">'
-         + '<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">'
-         + '<div class="container">'
-           + '<div class="carousel-caption">'
-             + '<h1>One more for good measure.</h1>'
-             + '<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>'
-             + '<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>'
-           + '</div>'
-         + '</div>'
-       + '</div>'
-     + '</div>'
      + '<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">'
        + '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>'
        + '<span class="sr-only">Previous</span>'
@@ -100,6 +90,7 @@ spa.carousel = (function () {
   initModule = function ( $container ) {
     $container.html( configMap.main_html );
     stateMap.$container = $container;
+    $('.carousel').carousel({ interval: configMap.speed_interval });
     return true;
   };
   // End public method /initModule/

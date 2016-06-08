@@ -14,12 +14,16 @@ spa.footer = (function () {
       main_html : String()
       + '<div class="container">'
       + '<footer>'
-      + '<p class="pull-right"><a href="#top">Back to top</a></p>'
-      + '<p>&copy; ' + new Date().getFullYear() + ' Sakis Kasampalis'
-      + '&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">'
-      + '<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>'
+      +   '<p><a href="https://github.com/faif"><img src="graphics/github.png" height="64" width="64"/></a>&nbsp;&nbsp;'
+      +       '<a href="https://twitter.com/SKasampalis"><img src="graphics/twitter.png" height="64" width="64"/></a>&nbsp;&nbsp;'
+      +       '<a href="https://www.linkedin.com/in/sakiskasampalis"><img src="graphics/linkedin.png" height="64" width="64"/></a>'      
+      +       '<div class="col-md-3 col-md-offset-3">&copy; ' + new Date().getFullYear() + ' Sakis Kasampalis'
+      +         '&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">'
+      +         '<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>'
+      +       '</div>'
+      +   '</p>'
       + '</footer>'
-      + '</div>',
+      + '</div>'      ,
       settable_map : {}
     },
     stateMap  = { $container : null },
