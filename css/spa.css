@@ -20,18 +20,16 @@
 
 /** Begin spa namespace selectors */
   #spa {
-    /*position : absolute;*/
+    position : absolute;
     top      : 0px;
     left     : 0px;
     bottom   : 30px;
     right    : 0px;
 
-    /*min-height : 500px;
-    min-width  : 500px;*/
     /*overflow   : auto;*/
 
     background-color : #fff;
-    /*border-radius    : 0 8px 0 8px;*/
+    border-radius    : 0 8px 0 8px;
   }
 /** End spa namespace selectors */
 

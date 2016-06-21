@@ -24,7 +24,7 @@ spa.navbar = (function () {
                + '<span class="icon-bar"></span>'
                + '<span class="icon-bar"></span>'
              + '</button>'
-             + '<a class="navbar-brand" href="#"><img alt="Home" src="graphics/figure.png"/></a>'
+             + '<span class="navbar-brand"><img alt="Home" src="graphics/logo.png"/></span>'
            + '</div>'
            + '<div id="navbar" class="navbar-collapse collapse">'
              + '<ul class="nav navbar-nav">'

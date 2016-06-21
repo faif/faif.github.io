@@ -201,3 +201,7 @@ code {
   background-color: #b2cecf;
   border-radius: 4px;
 }
+
+.navbar-brand > img {
+  padding-top: 5px;
+}
