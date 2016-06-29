@@ -18,5 +18,3 @@ github_username:  faif
 
 # Build settings
 markdown: kramdown
-
-sass_dir: css/_sass
