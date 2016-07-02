@@ -29,7 +29,7 @@ spa.navbar = (function () {
            + '<div id="navbar" class="navbar-collapse collapse">'
              + '<ul class="nav navbar-nav">'
                + '<li><a href="files/cv.pdf">CV</a></li>'
-               + '<li><a href="https://sakiskasampalis.blogspot.nl">Blog</a></li>'
+               + '<li><a href="blog">Blog</a></li>'
                + '<li><a href="#portfolio">Portfolio</a></li>'
                + '<li><a href="#contact">Contact</a></li>'
              + '</ul>'
