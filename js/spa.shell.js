@@ -19,7 +19,7 @@ spa.shell = (function () {
       },
       resize_interval : 200,
       main_html : String()
-        + '<a name="top"/>'
+        + '<a id="top"/>'
         + '<div class="spa-navbar"></div>'
         + '<div class="spa-carousel"></div>'
         + '<div class="spa-marketing"></div>'

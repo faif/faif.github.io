@@ -13,7 +13,11 @@
   <title>Sakis Kasampalis - Personal Homepage</title>
 
   <!-- third-party stylesheets -->
-  <link rel="stylesheet" href="css/bs/bootstrap.css" type="text/css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" type="text/css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" type="text/css"/>
   <link rel="stylesheet" href="css/bs/carousel.css" type="text/css"/>
 
   <!-- our stylesheets -->
@@ -22,9 +26,14 @@
   <link rel="stylesheet" href="css/spa.navbar.css" type="text/css"/>
 
   <!-- third-party javascript -->
-  <script src="js/jq/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="js/jq/jquery.uriAnchor-1.1.3.js"></script>
-  <script src="js/bs/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+    
 
   <!-- our javascript -->
   <script src="js/spa.js"></script>
@@ -37,7 +46,24 @@
   <script src="js/spa.footer.js"></script>
 
   <script>
-    $(function () { spa.initModule( $('#spa') ); })
+    $(function () { 
+        spa.initModule( $('#spa') ); 
+
+        var projectTableIDs = ["#active-projects", "#finished-projects", "#frozen-projects"];
+        projectTableIDs.forEach(configureDataTable);
+
+        function configureDataTable (tableID) {
+          $(tableID).DataTable({
+              "paging": false, "info": false, "searching": false, "stateSave": true, "autoWidth": true,
+              "columns": [
+                  null,
+                  null,
+                  null
+              ]
+          });
+        };
+
+  });
   </script>
 
 </head>
