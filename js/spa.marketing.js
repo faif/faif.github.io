@@ -86,6 +86,7 @@ spa.marketing = (function () {
          + '   </thead>'
          + '   <tbody>'
          + '    <tr><td class="text-center"><a href="https://github.com/faif/python-patterns">python-patterns</a></td><td class="text-center">A collection of design patterns/idioms in Python</td><td class="text-center">Python, design patterns, programmer, maintainer</td></tr>'
+         + '    <tr><td class="text-center"><a href="https://github.com/faif/interactclj">interactclj</a></td><td class="text-center">Interactive Clojure(Script) documentation</td><td class="text-center">clojure, standard library, interactive, examples</td></tr>'           
          + '    <tr><td class="text-center"><a href="https://developer.mbed.org/users/faif/">mbed prototypes</a></td><td class="text-center">Several microcontroller prototypes</td><td class="text-center">C++, mbed, LPC1768, programmer</td></tr>'
          + '    <tr><td class="text-center"><a href="https://github.com/faif/shell-utils">shell-utils</a></td><td class="text-center">Useful functions for POSIX shells (bash, ksh, tcsh, etc.)</td><td class="text-center">shell, scripting, POSIX, programmer</td></tr>'
          + '    <tr><td class="text-center"><a href="https://github.com/faif/algo">algo</a></td><td class="text-center">Implementation of common algorithms</td><td class="text-center">programming, algorithms, programmer</td></tr>'
