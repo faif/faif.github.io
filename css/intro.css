@@ -12,15 +12,16 @@ body {
 
 /* Set the animation, color, size and hide the text */
 .intro {
-    position: absolute;
-    top: 30%;
-    left: 35%;
     z-index: 1;
     animation: intro 6s ease-out 1s;
     color: rgb(75, 213, 238);
     font-weight: 400;
     font-size: 300%;
     opacity: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
 }
 
 @keyframes intro {
@@ -40,13 +41,12 @@ body {
 
 /* Set the animation & hide the logo */
 .logo {    
-    position: absolute;
-    top: 20%;
-    left: 45%;
-    z-index: 1;
-    margin: auto;
     animation: logo 9s ease-out 9s;
     opacity: 0;
+    top: 30%;
+    left: 40%;
+    display: block;
+    position: absolute;
 }
 
 .logo svg {
@@ -105,7 +105,7 @@ p {
 #content {
   animation: scroll 150s linear 20s;
   position: absolute;
-  top: 100%;
+  top: 100%;  
 }
 
 #title, #subtitle {
