@@ -28,7 +28,7 @@ spa.marketing = (function () {
          + '<img class="img-circle" src="graphics/rtfm.png" alt="Technical reading" width="140" height="140">'
          + '<h2>Designing Data-Intensive Applications</h2>'
          + '<p>Data is at the center of many challenges in system design today. Difficult issues need to be figured out, such as scalability, consistency, reliability, efficiency, and maintainability.<p>'
-         + '<p><a class="btn btn-default" href="https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture" role="button">View details &raquo;</a></p>'
+         + '<p><a class="btn btn-default" href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications" role="button">View details &raquo;</a></p>'
        + '</div>'
        + '<div class="col-lg-4">'
          + '<img class="img-circle" src="graphics/github.png" alt="Generic placeholder image" width="140" height="140"/>'
